@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EHR LoGIN">
+<listeners>
+    <listener class-name="com.practice.ehr.EHR.ItestLisenerClass"/>
+</listeners>
+	<parameter name="URL"
+		value="https://dv.cinch-project.com/#/login"></parameter>
+
+	<parameter name="userName" value="ab" />
+	<parameter name="passWord" value="Cips@1234" />
+	<test name="Login">
+		<classes>
+			<class name="com.practice.ehr.EHR.Login">
+				<methods>
+					<!-- <include name="browserManage"></include> <include name="lunchApp"></include> 
+						<include name="enterUserDetails"></include> <include name="createPatient"></include> 
+						<include name="PatientSearch"></include> <include name="vitalsAdd"></include> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CreateProgressNote">
+		<classes>
+			<class name="com.practice.ehr.create.PN.CreateProgressNote">
+				<methods>
+					<!-- <include name="browserManage"></include> -->
+					<!-- <include name="lunchApp"></include> <include name="enterUserDetails"></include> -->
+					<!-- <include name="PatientSearch"></include> <include name="createPN"></include> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CreateAppointFromHomepage">
+		<classes>
+			<class
+				name="com.practice.ehr.create.newappointment.FromHomePageCreateNewAppointment">
+				<methods>
+					<!-- <include name="browserManage"></include> -->
+					<!-- <include name="lunchApp"></include> <include name="enterUserDetails"></include> 
+						<include name="createAppFromHomePg"></include> <include name="assortionschk"></include> -->
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+
+	<test name="create patient">
+		<classes>
+			<class name="com.practice.ehr.create.patient.CreatePatient">
+				<methods>
+					<!-- <include name="browserManage"></include> -->
+					<!-- <include name="lunchApp"></include>
+					<include name="enterUserDetails"></include>
+					<include name="createPatient"></include> -->
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+
+	<test name="Patient search and vital add">
+		<classes>
+			<class
+				name="com.practice.ehr.patient.search.add.vitals.PatientSearchAndVitalsAdd">
+				<methods>
+					<!-- <include name="browserManage"></include> -->
+					<include name="lunchApp"></include>
+					<include name="enterUserDetails"></include>
+					<include name="PatientSearch"></include>
+					<!-- <include name="vitalsAdd"></include> -->
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
