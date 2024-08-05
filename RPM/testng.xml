@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RPM LOGIN">
+	<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="url" value="https://devrpm.kavanant.com/"></parameter>
+
+	<parameter name="userName" value="akshay.d@kavanant.com" />
+	<parameter name="passWord" value="Sandeep@1234" />
+	<test name="Patient">
+		<classes>
+			<class
+				name="com.practicexmltestNGParameters.Parameters.RpmPatient">
+				<methods>
+					<include name="intileBrowser" />
+					<include name="closeBrowser" />
+					<include name="lunchApp" />
+					<include name="enterUserDetails" />
+					<!-- <include name="patSearch" /> -->
+					<include name="loginedUserNameChech" />
+
+					<!-- <include name="addNewPatient" /> -->
+					<!-- <include name="createPatientEnrollment" />
+					<include
+						name="addedPatientCorrectornotcheckByUsingassertion" />
+
+					<include name="addCareTeamToPatient" />
+					<include name="patientDemographis" />
+					<include name="patientDocument" />
+					<include name="patientInsurence" />
+					<include name="PatientBilling" />
+					<include name="insurenceAssertions" /> -->
+					
+
+
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Master">
+		<classes>
+
+			<class
+				name="com.practicexmltestNGParameters.Parameters.RpmMaster">
+				<methods>
+					<!-- <include name="intileBrowser" />
+					<include name="closeBrowser" />
+					<include name="lunchApp" />
+					<include name="enterUserDetails" />
+					<include name="masterIcon" />
+					<include name="masterDOC" /> -->
+					<!-- <include name="masterEnrollment" /> -->
+
+
+
+
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+ 

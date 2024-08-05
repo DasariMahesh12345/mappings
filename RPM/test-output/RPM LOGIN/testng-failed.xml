@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RPM LOGIN]" guice-stage="DEVELOPMENT">
+  <parameter name="passWord" value="Sandeep@1234"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="akshay.d@kavanant.com"/>
+  <parameter name="url" value="https://devrpm.kavanant.com/"/>
+  <test thread-count="5" name="Patient(failed)">
+    <classes>
+      <class name="com.practicexmltestNGParameters.Parameters.RpmPatient">
+        <methods>
+          <include name="loginedUserNameChech"/>
+          <include name="intileBrowser"/>
+        </methods>
+      </class> <!-- com.practicexmltestNGParameters.Parameters.RpmPatient -->
+    </classes>
+  </test> <!-- Patient(failed) -->
+  <test thread-count="5" name="Master(failed)">
+    <classes>
+      <class name="com.practicexmltestNGParameters.Parameters.RpmMaster">
+        <methods>
+          <include name="patSearch"/>
+          <include name="addNewPatient"/>
+          <include name="addCareTeamToPatient"/>
+          <include name="enterUserDetails" invocation-numbers="0"/>
+          <include name="patientDocument"/>
+          <include name="patientDemographis"/>
+          <include name="masterIcon"/>
+          <include name="loginedUserNameChech"/>
+          <include name="masterDOC"/>
+          <include name="intileBrowser"/>
+          <include name="patientInsurence"/>
+          <include name="createPatientEnrollment"/>
+        </methods>
+      </class> <!-- com.practicexmltestNGParameters.Parameters.RpmMaster -->
+    </classes>
+  </test> <!-- Master(failed) -->
+</suite> <!-- Failed suite [RPM LOGIN] -->
