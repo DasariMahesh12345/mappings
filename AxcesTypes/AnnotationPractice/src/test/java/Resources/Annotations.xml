@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="1st testing">
+	<test name="test1">
+		<classes>
+			<class name="com.practicexmltestNGAnnotations.AnnotationPractice.AnnotationTest">
+				<methods>
+					<include name="defaultMethod"></include>
+					<include name="afterMethod"></include>
+					
+				<include name="beforeSuite"></include>
+				<include name="beforeTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
